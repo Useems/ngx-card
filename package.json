@@ -20,7 +20,8 @@
     "demo:build": "npm run build && gulp demo:ngc && webpack --config ./demo/webpack.config.js",
     "demo:release": "npm run demo:build && node scripts/gh-pages",
     "prerelease": "npm run build && npm test",
-    "release": "node scripts/release"
+    "release": "node scripts/release",
+    "postinstall": "ngcc"
   },
   "keywords": [
     "angular",
